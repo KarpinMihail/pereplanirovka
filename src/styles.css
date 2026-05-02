@@ -1052,15 +1052,15 @@ body {
 .quiz-two-columns {
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1.5fr 1fr;  /* левая шире правой */
     gap: 40px;
+	align-items: stretch; /* обеспечивает одинаковую высоту */
 }
 .quiz-left {
-    flex: 2;
     background: white;
     border-radius: 24px;
     padding: 30px;
-	height: 100%;
+    /* убираем flex: 2 — он не нужен при grid */
 }
 .quiz-step-counter {
     font-size: 0.9rem;
@@ -1103,11 +1103,13 @@ body {
     cursor: pointer;
 }
 .quiz-right {
-    flex: 1;
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 25px;
-	height: 100%;
+    /* убираем height: 100% — grid и так растянет */
 }
 .expert-card {
     background: white;
@@ -1115,6 +1117,7 @@ body {
     padding: 25px;
     text-align: center;
     border-top: 4px solid #ff6b00;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 .expert-avatar img {
     width: 100%;
@@ -1132,6 +1135,7 @@ body {
     background: white;
     border-radius: 24px;
     padding: 25px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 /* ===== АДАПТИВ (MEDIA QUERIES) — только один блок ===== */
 @media (max-width: 768px) {
