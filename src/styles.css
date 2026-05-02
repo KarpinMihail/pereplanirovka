@@ -1258,3 +1258,27 @@ body {
         font-size: 1.2rem;
     }
 }
+
+/* Жёсткая фиксация высоты слайдера */
+.hero-right-block {
+    min-height: 450px;
+}
+.hero-image-large {
+    height: 450px !important;
+    overflow: hidden;
+}
+.hero-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block;
+}
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .hero-right-block {
+        min-height: 300px;
+    }
+    .hero-image-large {
+        height: 300px !important;
+    }
+}
