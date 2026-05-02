@@ -37,7 +37,7 @@ export default function Header() {
                         </div>
                     </div>
                     <div className="contact-block">
-                        <a href="tel:+79507473434" className="phone">+7 (950) 747-34-34</a>
+                        <a href="tel:+79507473434" className="phone">+7 (950) 747-34-35</a>
                         <button className="btn-consult" onClick={() => setIsModalOpen(true)}>
                             Записаться на консультацию
                         </button>
