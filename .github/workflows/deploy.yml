@@ -7,6 +7,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      CI: false
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -14,7 +16,7 @@ jobs:
           node-version: '18'
           cache: 'npm'
       - run: npm ci
-      - run: CI=false npm run build      # < ключевое: передаём CI=false именно в эту команду
+      - run: npm run build
       - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
