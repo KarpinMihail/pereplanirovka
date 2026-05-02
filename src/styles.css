@@ -153,8 +153,8 @@ body {
 }
 .hero-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
     align-items: center;
 }
 .hero h1 {
@@ -1050,17 +1050,17 @@ body {
     background: #f5f5f5;
 }
 .quiz-two-columns {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: 1fr 1.2fr;
+    display: flex;
     gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
 }
 .quiz-left {
     flex: 2;
     background: white;
     border-radius: 24px;
     padding: 30px;
-	height: 100%;
 }
 .quiz-step-counter {
     font-size: 0.9rem;
@@ -1107,7 +1107,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-	height: 100%;
 }
 .expert-card {
     background: white;
