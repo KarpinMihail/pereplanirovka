@@ -17,6 +17,7 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
+      - run: echo "No tests"
       - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
