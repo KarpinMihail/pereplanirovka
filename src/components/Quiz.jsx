@@ -56,7 +56,7 @@ const questions = [
 ];
 
 // === НАСТРОЙКИ EMAIL ===
-// const YOUR_EMAIL = "mariya-karpina@yandex.ru";
+const YOUR_EMAIL = "mariya-karpina@yandex.ru";
 
 export default function Quiz() {
     const [step, setStep] = useState(0);
