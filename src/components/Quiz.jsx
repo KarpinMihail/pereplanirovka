@@ -57,6 +57,7 @@ const questions = [
 
 // === НАСТРОЙКИ EMAIL ===
 const YOUR_EMAIL = "mariya-karpina@yandex.ru";
+// просто тестирую pipline
 
 export default function Quiz() {
     const [step, setStep] = useState(0);
